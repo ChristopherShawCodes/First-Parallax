@@ -6,8 +6,6 @@ const CANVAS_HEIGHT = canvas.height = 700;
 //Using let instead of Const so I can change the variable of speed as I go
 let gameSpeed = 2;
 
-// let gameFrame = 0;
-
 
 //------------------------------------------------------------------Background Image Layers 1-5
 const backgroundLayer1 = new Image();
@@ -29,8 +27,21 @@ showGameSpeed.innerHTML = gameSpeed;
 slider.addEventListener('change', function(e) {
     gameSpeed = e.target.value;
     showGameSpeed.innerHTML = e.target.value;
-})
+});
 
+//-------------------------------------------------------------------Pause Button
+
+const pause = document.getElementById('pause');
+pause.addEventListener('click', function(e){
+    gameSpeed = 0;
+});
+
+//-------------------------------------------------------------------Continue Button
+
+const cont = document.getElementById('continue');
+cont.addEventListener('click', function(e){
+    gameSpeed = 2;
+});
 
 //-------------------------------------------------------------------Load All Objects Before Starting Game
 window.addEventListener('load',function(){

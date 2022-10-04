@@ -10,9 +10,14 @@
 <body>
     <div class="container" id="container">
         <canvas id="canvas1"></canvas>
-        <p>Game Speed: <span id="showGameSpeed"></span></p>
-        <input type="range" min="0" max="10" value="2" class="slider" id="slider">
     </div>
-        <script src="/home.js"></script>
+    <div class="container" id="controls">
+        <p>Current Game Speed : <span id="showGameSpeed"></span></p>
+        <p id="instructions">Adjust Game Speed With Slider</p>
+        <input type="range" min="0" max="10" value="2" class="slider" id="slider">
+        <button id="pause">Pause Game</button>
+        <button id="continue">Continue Game</button>
+    </div>
+    <script src="/home.js"></script>
 </body>
 </html>

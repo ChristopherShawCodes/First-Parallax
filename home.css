@@ -25,3 +25,30 @@ body{
 p{
     color: white;
 }
+
+#controls{
+    width: 10.9%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 1rem;
+    margin-top: 7.5rem;
+    margin-left: 7rem;
+}
+
+#showGameSpeed{
+    border: 1px solid #FED55E;
+    padding: 4px;
+}
+
+button{
+    margin-top: 1rem;
+}
+
+button:hover{
+    background-color: #FED55E;
+}
+
+#instructions{
+    color: #FED55E;
+    font-size: 14px;
+}
